@@ -6,3 +6,4 @@ print("Hello! Please choose select a country by number:")
 for index, country in enumerate(countries):
   print(f"#{index} {country['name']}")
 ask()
+

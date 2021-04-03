@@ -27,6 +27,7 @@ def scrap():
   return countries
 
 def ask():
+  countries = scrap()
   try:
     choice = int(input("#: "))
     if choice > len(countries):
@@ -35,6 +36,7 @@ def ask():
     else:
       country = countries[choice]
       print(f"You chose {country['name']}\nThe currency code is {country['code']}")
+      ask()
   except ValueError:
     print("That wasn't a number.")
     ask()
