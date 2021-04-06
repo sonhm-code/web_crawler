@@ -1,1 +1,3 @@
-hello
+from alba import alba
+
+alba()
